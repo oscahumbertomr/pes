@@ -7,45 +7,35 @@
             <v-col cols="11" class="pa-0">
                 <v-col cols="12">
                     <div>
-                        Un balón de futbol lleva una velocidad inicial de 2\(m \over segs\), sigue una trayectoria en
+                        Un balón de futbol lleva una velocidad inicial de 2\(m \over segs\), sigue una <strong>trayectoria</strong>
+                        ________________ en
                         línea
                         recta, cuando lo recibe un jugador, lo patea a una velocidad final de 6\(m \over segs\)
                         y tarda 3 segundos en detenerse. Con la siguiente expresión, calcula la distancia que
                         recorre el balón. \[d = ({vf-vi \over 2})t.\]
                     </div>
-                    <div style="display: flex;justify-content: center;">
-                        <img src="http://localhost:3000/mapa.jpeg"/>
-                    </div>
-
                     <div>
-                        <div  class="fichaDomino">
-                            <table>
-                                <tbody>
-                                <tr style="height: 100px;">
-                                    <td class="parteTop">\(2a^2+2ab–b^2\)
-                                    </td>
-                                </tr>
-                                <tr style="height: 100px;">
-                                    <td class="parteBottom"></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            <div class="centroFicha">
-                            </div>
-                        </div>
+                        <ul>
+                            <li type="square">Materia estelar = \(e\)</li>
+                            <li type="square">Materia y energía obscura = \(m2\)</li>
+                            <li type="square">Materia y energía sin identificar = \(𝑖^3\)</li>
+                        </ul>
+                    </div>
+                    <div class="imagenPregunta">
+                        <img class="imagenPregunta" :src="host+'Pregunta10.png'"/>
                     </div>
                 </v-col>
 
                 <v-col cols="12" xs12 sm12 md12>
                     <v-radio-group v-model="radioGroup">
                         <v-radio>
+                            <template v-slot:label>A. d= 15\(m \over segs\)</template>
+                        </v-radio>
+                        <v-radio>
                             <template v-slot:label>B. d= 6\(m\)</template>
                         </v-radio>
                         <v-radio>
                             <template v-slot:label>C. d= 12\(m\)</template>
-                        </v-radio>
-                        <v-radio>
-                            <template v-slot:label>D. d= 12\(m \over segs\)</template>
                         </v-radio>
                         <v-radio>
                             <template v-slot:label>
@@ -57,7 +47,7 @@
                         </v-radio>
                         <v-radio>
                             <template v-slot:label>
-                                <div  class="fichaDomino">
+                                <div class="fichaDomino">
                                     <table>
                                         <tbody>
                                         <tr style="height: 90px;">
@@ -137,60 +127,161 @@
                     <v-radio-group v-model="radioGroup">
                         <v-radio>
                             <template v-slot:label>
-                                <v-row align="start"
-                                       justify="center">
-                                    <v-col cols="1" class=" flex5">A.</v-col>
-                                    <v-col cols="11" class="pa-0">
+                                <div>
+                                    A. Vendió 1 021 kg <br>
+                                    <div style="padding-left: 20px;">Sobró 729 kg</div>
+                                </div>
+                            </template>
+                        </v-radio>
+                        <v-radio>
+                            <template v-slot:label>
+                                <div>
+                                    B. Vendió 1 022 kg <br>
+                                    <div style="padding-left: 20px;">Sobró 728 kg</div>
+                                </div>
+                            </template>
+                        </v-radio>
+                        <v-radio>
+                            <template v-slot:label>
+                                <div>
+                                    C. Vendió 1 023 kg <br>
+                                    <div style="padding-left: 20px;">Sobró 727 kg</div>
+                                </div>
+                            </template>
+                        </v-radio>
+                        <v-radio>
+                            <template v-slot:label>
+                                <div>
+                                    D. Vendió 1 024 kg <br>
+                                    <div style="padding-left: 20px;">Sobró 726 kg</div>
+                                </div>
+                            </template>
+                        </v-radio>
+                    </v-radio-group>
+                </v-col>
+            </v-col>
+        </v-row>
+        <v-row justify="center" align="center">
+            <v-col cols="1" style="padding-right: 0;margin-bottom: auto;margin-top: 0;flex: 0 0 3%;max-width: 3%;">
+                3.-
+            </v-col>
+            <v-col cols="11" class="pa-0">
+                <v-col cols="12" xs12 sm12 md12>
+                    <div>
+                        Dos fichas de dominó se podrán unir siempre y cuando la expresión algebraica de una
+                        corresponda al resultado de la operación expresada en la otra.
+                    </div>
+                    <div class="fichaDomino">
+                        <table>
+                            <tbody>
+                            <tr style="height: 100px;">
+                                <td class="parteTop">
+                                    <p>El producto de:</p>
+                                    <p>\(a+b\)</p>
+                                    <p>con:</p>
+                                    <p>\(2a-b\)</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 100px;">
+                                <td class="parteBottom"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="centroFicha">
+                        </div>
+                    </div>
+                    <div>
+                        ¿Con cuál de las siguientes opciones se podrá unir la ficha?
+                    </div>
+                </v-col>
+                <v-col cols="12 py-0" xs12 sm12 md12>
+                    <v-radio-group v-model="radioGroup" row>
+                        <v-radio>
+                            <template v-slot:label>
+                                <div>
+                                    A.
+                                    <div class="fichaDomino">
                                         <table>
                                             <tbody>
-                                            <tr>
-                                                <td>
-                                                    Vendió 1 021 kg
+                                            <tr style="height: 90px;">
+                                                <td class="parteTop">\(2a^2+2ab–b^2\)
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td>
-                                                    Sobró 729 kg
-                                                </td>
+                                            <tr style="height: 90px;">
+                                                <td class="parteBottom"></td>
                                             </tr>
                                             </tbody>
                                         </table>
-                                    </v-col>
-                                </v-row>
+                                        <div class="centroFicha">
+                                        </div>
+                                    </div>
+                                </div>
                             </template>
                         </v-radio>
                         <v-radio>
                             <template v-slot:label>
-                                <v-row align="start"
-                                       justify="center">
-                                    <v-col cols="1" class=" flex5">B.</v-col>
-                                    <v-col cols="11" class="pa-0">
+                                <div>
+                                    B.
+                                    <div class="fichaDomino">
                                         <table>
                                             <tbody>
-                                            <tr>
-                                                <td>
-                                                    Vendió 1 022 kg
+                                            <tr style="height: 90px;">
+                                                <td class="parteTop">\(3a^2-2b^2\)
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td>
-                                                    Sobró 728 kg
-                                                </td>
+                                            <tr style="height: 90px;">
+                                                <td class="parteBottom"></td>
                                             </tr>
                                             </tbody>
                                         </table>
-                                    </v-col>
-                                </v-row>
+                                        <div class="centroFicha">
+                                        </div>
+                                    </div>
+                                </div>
                             </template>
                         </v-radio>
                         <v-radio>
                             <template v-slot:label>
-                                {{variableTabla}}
+                                <div>
+                                    C.
+                                    <div class="fichaDomino">
+                                        <table>
+                                            <tbody>
+                                            <tr style="height: 90px;">
+                                                <td class="parteTop">\(2a^2+ab–b^2\)
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 90px;">
+                                                <td class="parteBottom"></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="centroFicha">
+                                        </div>
+                                    </div>
+                                </div>
                             </template>
                         </v-radio>
                         <v-radio>
                             <template v-slot:label>
-                                <div v-html="variableTabla2"></div>
+                                <div>
+                                    D.
+                                    <div class="fichaDomino">
+                                        <table>
+                                            <tbody>
+                                            <tr style="height: 90px;">
+                                                <td class="parteTop">\(2a^2+b^2\)
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 90px;">
+                                                <td class="parteBottom"></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="centroFicha">
+                                        </div>
+                                    </div>
+                                </div>
                             </template>
                         </v-radio>
                     </v-radio-group>
@@ -200,13 +291,26 @@
     </v-container>
 </template>
 <style>
+    .imagenPregunta img{
+        max-width: 75vw;
+    }
+    .imagenPregunta div{
+        display: flex;
+        justify-content: center;
+    }
     .fichaDomino {
         display: flex;
         justify-content: center;
     }
+
     .fichaDomino table {
         border-spacing: 0;
     }
+
+    .fichaDomino p {
+        margin-bottom: -6px !important
+    }
+
     .fichaDomino .parteTop {
         border-style: solid;
         border-top-right-radius: 30px;
@@ -215,6 +319,7 @@
         border-top-left-radius: 30px;
         border-spacing: 0;
     }
+
     .fichaDomino .parteBottom {
         border-style: solid;
         border-top-style: none;
@@ -225,7 +330,7 @@
         border-spacing: 0;
     }
 
-    .centroFicha{
+    .centroFicha {
         border-radius: 7.5px;
         border-style: solid;
         width: 15px;
@@ -238,18 +343,13 @@
     .fichaDomino table {
         border-spacing: 0;
     }
-    .clase_table {
-        border-collapse: separate;
-        border-spacing: 10;
-        border: 1px solid black;
-        border-radius: 15px;
-        -moz-border-radius: 20px;
-        padding: 2px;
-    }
 
     .flex3 {
         flex: 0 0 3%;
         max-width: 3%;
+        padding-right: 0;
+        margin-bottom: auto;
+        margin-top: 0;
     }
 
     .flex5 {
@@ -263,29 +363,29 @@
         border-spacing: 0;
     }
 
-    /*.tg td {*/
-    /*    border-color: black;*/
-    /*    border-style: solid;*/
-    /*    border-width: 1px;*/
-    /*    overflow: hidden;*/
-    /*    padding: 10px 5px;*/
-    /*    word-break: normal;*/
-    /*}*/
+    .tg td {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+    }
 
-    /*.tg th {*/
-    /*    border-color: black;*/
-    /*    border-style: solid;*/
-    /*    border-width: 1px;*/
-    /*    overflow: hidden;*/
-    /*    padding: 10px 5px;*/
-    /*    word-break: normal;*/
-    /*}*/
+    .tg th {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+    }
 
-    /*.tg {*/
-    /*    border-color: inherit;*/
-    /*    text-align: center;*/
-    /*    vertical-align: top*/
-    /*}*/
+    .tg {
+        border-color: inherit;
+        text-align: center;
+        vertical-align: top
+    }
 </style>
 <script>
     import katex from "katex";
@@ -296,32 +396,7 @@
         data() {
             return {
                 radioGroup: "",
-                variableTabla: `C. Vendió 1 021 kg y Sobró 729 kg`,
-                variableTabla2: `C. Vendió 1 021 kg <br> <div style="padding-left: 20px;">Sobró 729 kg</div>`,
-                variableMath: `D. d= 12\(m \over segs\)`,
-                variableApi: ``,
-                items: [
-                    {
-                        title: "COMPETENCIA MATEMÁTICA",
-                        text: "0-35",
-                        to: "matematicas",
-                    },
-                    {
-                        title: "COMPETENCIA LECTORA",
-                        text: "0-60",
-                        to: "matematicas",
-                    },
-                    {
-                        title: "COMPETENCIA EN CIENCIAS EXPERIMENTALES",
-                        text: "0-60",
-                        to: "matematicas",
-                    },
-                ],
-                opcionC: '<label for="input-46" class="v-label theme--light" style="left:0px;right:auto;position:relative;"><div class="container pa-0 container--fluid"><div class="row align-start justify-center"><div class="flex5 col col-1">B.</div> <div class="pa-0 col col-11"><table><tbody><tr><td>\n' +
-                    '                                                Vendió 1 022 kg\n' +
-                    '                                            </td></tr> <tr><td>\n' +
-                    '                                                Sobró 728 kg\n' +
-                    '                                            </td></tr></tbody></table></div></div></div></label>'
+                host:'http://localhost:3000/imagenes/'
             };
 
         },

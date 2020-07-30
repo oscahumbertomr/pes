@@ -20,6 +20,10 @@
     </v-container>
 </template>
 <style>
+    .imagenPregunta{
+        display: flex;justify-content: center;
+        max-width: 75vw;
+    }
     .fichaDomino {
         display: flex;
         justify-content: center;
