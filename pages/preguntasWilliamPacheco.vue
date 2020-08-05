@@ -30,7 +30,7 @@
                         </ul>
                     </div>
                     <div class="imagenPregunta">
-                        <img class="imagenPregunta" :src="host+'Pregunta12.png'"/>
+                        <img class="imagenPregunta" src="/imagenes/Pregunta12.png"/>
                     </div>
                     <!--                    ______ _____ _   _        _    _ _______ __  __ _                             ______ _____ _____ _______       _____    -->
                     <!--                    |  ____|_   _| \ | |      | |  | |__   __|  \/  | |               /\          |  ____|  __ \_   _|__   __|/\   |  __ \  -->
@@ -207,7 +207,6 @@
         data() {
             return {
                 radioGroup: "",
-                host:'http://localhost:3000/imagenes/'
             };
 
         },
@@ -228,7 +227,6 @@
         mounted() {
             renderMathInElement(document.body);
             window.vm = this;
-            this.api()
         },
     };
 </script>
